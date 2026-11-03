@@ -1,0 +1,66 @@
+<!-- Suisseo head template. Replace [BRACKETS]. -->
+<!DOCTYPE html>
+<html lang="[LANG]">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[TITLE_50_65_CHAR_WITH_TARGET_KW]</title>
+<meta name="description" content="[META_DESC_145_160_CHAR]">
+<link rel="canonical" href="[CANONICAL_URL]">
+<meta name="robots" content="index,follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="[OG_TITLE]">
+<meta property="og:description" content="[OG_DESC]">
+<meta property="og:image" content="[OG_IMAGE_URL]">
+<meta property="og:url" content="[CANONICAL_URL]">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="[OG_TITLE]">
+<meta name="twitter:description" content="[OG_DESC]">
+<meta name="twitter:image" content="[OG_IMAGE_URL]">
+
+<link rel="icon" type="image/png" href="[FAVICON_URL]">
+<link rel="preconnect" href="[CLIENT_DOMAIN]" crossorigin>
+
+<!-- Inject client inline styles + CSS bundle here -->
+[CLIENT_INLINE_STYLES]
+[CLIENT_CSS_LINKS]
+
+<!-- JSON-LD : Service / Product / Organization -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"[SCHEMA_TYPE]",
+  "name":"[SCHEMA_NAME]",
+  "description":"[SCHEMA_DESC]",
+  "url":"[CANONICAL_URL]",
+  "image":"[OG_IMAGE_URL]"
+}
+</script>
+
+<!-- Suisseo overlay -->
+<style>
+.suisseo-banner{position:fixed;right:16px;bottom:16px;z-index:9999;background:#1E2A38;color:#fff;font-size:11px;padding:9px 14px;border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.18);font-family:system-ui,sans-serif;line-height:1.4}
+.suisseo-banner b{color:#95C11F}
+.suisseo-banner a{color:rgba(255,255,255,.65);text-decoration:none}
+.suisseo-banner a:hover{color:#fff}
+</style>
+</head>
+<body>
+<div id="__app" class="isolate">
+
+[CLIENT_HEADER_HTML]
+
+[BODY_CONTENT]
+
+[FOOTER_SUISSEO_HTML]
+
+</div>
+
+<div class="suisseo-banner">
+  Maquette <b>Suisseo</b> &middot; Page [PAGE_LABEL]<br>
+  <a href="mailto:thomas.nedjar@suisseo.ch">thomas.nedjar@suisseo.ch</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!-- Suisseo body template. Sober, SEO-friendly, dual CTA at the bottom. -->
+<!-- Replace [BRACKETS] with client content. Do NOT invent content not present on the source site. -->
+
+<style>
+.maq-body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#171717;line-height:1.6;font-size:16px;background:#fff;-webkit-font-smoothing:antialiased}
+.maq-body *,.maq-body *::before,.maq-body *::after{box-sizing:border-box}
+.maq-body img{max-width:100%;height:auto;display:block}
+.maq-body a{color:inherit;text-decoration:none}
+.maq-body{
+  --primary:[CLIENT_PRIMARY];--primary-hover:[CLIENT_PRIMARY_DARK];
+  --yellow:[CLIENT_ACCENT];--yellow-hover:[CLIENT_ACCENT_DARK];
+  --ink:#0d1b2a;--text:#171717;--muted:#525252;--soft:#737373;
+  --border:#e5e7eb;--bg:#fff;--bg-soft:#f8fafc;
+  --radius:10px;--container:1200px;
+}
+.maq-body .crumb{max-width:var(--container);margin:0 auto;padding:18px 24px 0;font-size:13px;color:var(--soft)}
+.maq-body .crumb a{color:var(--soft)} .maq-body .crumb a:hover{color:var(--primary)}
+.maq-body .crumb .sep{margin:0 8px;color:#cbd5e1}
+.maq-body .crumb [aria-current="page"]{color:var(--text);font-weight:500}
+.maq-body .btnx{display:inline-flex;align-items:center;gap:8px;font-weight:500;border-radius:9999px;border:1px solid transparent;text-decoration:none;transition:all .15s;padding:10px 18px;font-size:14px;line-height:1.2;cursor:pointer}
+.maq-body .btnx-pri{background:var(--yellow);color:#000;border-color:var(--yellow)}
+.maq-body .btnx-pri:hover{background:var(--yellow-hover);border-color:var(--yellow-hover)}
+.maq-body .btnx-out{background:transparent;color:var(--ink);border-color:var(--border)}
+.maq-body .btnx-out:hover{border-color:var(--ink)}
+.maq-body .btnx-lg{padding:14px 24px;font-size:15px}
+.maq-body .hero{padding:48px 0 64px}
+.maq-body .hero-inner{max-width:var(--container);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.maq-body .eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--primary);margin-bottom:14px}
+.maq-body .hero h1{font-size:48px;line-height:1.08;font-weight:700;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
+.maq-body .hero h1 em{font-style:normal;color:var(--primary)}
+.maq-body .hero .lead{font-size:19px;color:var(--muted);max-width:560px;margin-bottom:28px}
+.maq-body .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.maq-body .hero-image{border-radius:var(--radius);overflow:hidden;background:var(--bg-soft);aspect-ratio:5/4}
+.maq-body .hero-image img{width:100%;height:100%;object-fit:cover}
+.maq-body .trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-soft);padding:18px 0}
+.maq-body .trust-inner{max-width:var(--container);margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;font-size:13px;color:var(--muted)}
+.maq-body .trust strong{color:var(--ink);font-weight:600}
+.maq-body .trust .dot{width:4px;height:4px;border-radius:9999px;background:#cbd5e1;display:inline-block;margin:0 10px;vertical-align:middle}
+.maq-body .sectn{padding:88px 0}
+.maq-body .sectn-inner{max-width:var(--container);margin:0 auto;padding:0 24px}
+.maq-body .sectn-title{font-size:36px;line-height:1.15;font-weight:700;color:var(--ink);letter-spacing:-.01em;margin-bottom:14px}
+.maq-body .sectn-lead{font-size:18px;color:var(--muted);max-width:680px;margin-bottom:48px}
+.maq-body .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.maq-body .split.reverse > .split-img{order:-1}
+.maq-body .split-img{aspect-ratio:5/4;border-radius:var(--radius);overflow:hidden;background:var(--bg-soft)}
+.maq-body .split-img img{width:100%;height:100%;object-fit:cover}
+.maq-body .split h2{font-size:32px;line-height:1.15;font-weight:700;color:var(--ink);margin-bottom:14px;letter-spacing:-.01em}
+.maq-body .split p{color:var(--muted);font-size:17px;margin-bottom:14px}
+.maq-body .split ul{margin-top:18px;list-style:none;padding:0}
+.maq-body .split ul li{padding:10px 0;color:var(--text);font-size:15px;display:flex;gap:12px;align-items:flex-start;border-top:1px solid var(--border)}
+.maq-body .split ul li:last-child{border-bottom:1px solid var(--border)}
+.maq-body .split ul li::before{content:"";flex:0 0 16px;height:16px;background:var(--primary);mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill-rule='evenodd' d='M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0l-3.5-3.5a1 1 0 1 1 1.4-1.4L8.5 12 15.3 5.3a1 1 0 0 1 1.4 0z' clip-rule='evenodd'/></svg>") center/contain no-repeat;-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill-rule='evenodd' d='M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0l-3.5-3.5a1 1 0 1 1 1.4-1.4L8.5 12 15.3 5.3a1 1 0 0 1 1.4 0z' clip-rule='evenodd'/></svg>") center/contain no-repeat;margin-top:6px}
+.maq-body .specs{background:var(--bg-soft);padding:80px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.maq-body .specs-grid{max-width:var(--container);margin:0 auto;padding:0 24px}
+.maq-body .specs-table{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-top:32px}
+.maq-body .specs-row{display:grid;grid-template-columns:240px 1fr;gap:32px;padding:18px 24px;border-bottom:1px solid var(--border)}
+.maq-body .specs-row:last-child{border-bottom:none}
+.maq-body .specs-row dt{font-weight:600;color:var(--ink);font-size:14px}
+.maq-body .specs-row dd{color:var(--muted);font-size:15px}
+.maq-body .faq{padding:80px 0}
+.maq-body .faq-inner{max-width:880px;margin:0 auto;padding:0 24px}
+.maq-body .faq details{border-bottom:1px solid var(--border);padding:18px 0}
+.maq-body .faq details:first-of-type{border-top:1px solid var(--border)}
+.maq-body .faq summary{font-weight:600;font-size:17px;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.maq-body .faq summary::-webkit-details-marker{display:none}
+.maq-body .faq summary::after{content:"+";color:var(--primary);font-size:22px;transition:transform .2s}
+.maq-body .faq details[open] summary::after{transform:rotate(45deg)}
+.maq-body .faq details p{margin-top:12px;color:var(--muted);font-size:15px}
+.maq-body .final-cta{background:linear-gradient(135deg,#0d1b2a 0%,#0d3142 50%,var(--primary-hover) 100%);color:#fff;padding:80px 0}
+.maq-body .final-inner{max-width:var(--container);margin:0 auto;padding:0 24px}
+.maq-body .final-cta h2{font-size:40px;line-height:1.1;font-weight:700;letter-spacing:-.01em;margin-bottom:14px;color:#fff}
+.maq-body .final-cta .sub{color:rgba(255,255,255,.78);font-size:18px;max-width:680px;margin-bottom:40px}
+.maq-body .cta-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.maq-body .cta-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;gap:14px}
+.maq-body .cta-card:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.25)}
+.maq-body .cta-card h3{font-size:22px;font-weight:700;color:#fff}
+.maq-body .cta-card p{color:rgba(255,255,255,.7);font-size:15px;flex:1}
+@media (max-width:1024px){
+  .maq-body .hero h1{font-size:36px}.maq-body .sectn-title{font-size:28px}
+  .maq-body .hero-inner,.maq-body .split,.maq-body .split.reverse,.maq-body .cta-cards,.maq-body .specs-row{grid-template-columns:1fr;gap:32px}
+  .maq-body .split.reverse > .split-img{order:0}
+}
+@media (max-width:640px){.maq-body .hero h1{font-size:30px}.maq-body .final-cta h2{font-size:28px}}
+</style>
+
+<main class="maq-body">
+
+<nav class="crumb" aria-label="Breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span><a href="#">[PARENT_SECTION]</a><span class="sep">/</span><span aria-current="page">[PAGE_TITLE]</span>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">[CATEGORY]</span>
+      <h1>[PAGE_TITLE_HEADLINE] <em>[PAGE_TITLE_ACCENT]</em></h1>
+      <p class="lead">[VALUE_PROP_2_PHRASES]</p>
+      <div class="hero-cta">
+        <a class="btnx btnx-pri btnx-lg" href="#contact">[CTA_PRIMARY] &rarr;</a>
+        <a class="btnx btnx-out btnx-lg" href="[CONFIGURATOR_URL]" target="_blank" rel="noopener">[CTA_SECONDARY]</a>
+      </div>
+    </div>
+    <div class="hero-image"><img src="[HERO_IMAGE_URL]" alt="[HERO_ALT]" width="800" height="640" loading="eager"></div>
+  </div>
+</section>
+
+<aside class="trust" aria-label="Highlights">
+  <div class="trust-inner">
+    <span><strong>[HIGHLIGHT_1]</strong></span><span class="dot"></span>
+    <span><strong>[HIGHLIGHT_2]</strong></span><span class="dot"></span>
+    <span><strong>[HIGHLIGHT_3]</strong></span><span class="dot"></span>
+    <span><strong>[HIGHLIGHT_4]</strong></span>
+  </div>
+</aside>
+
+<section class="sectn"><div class="sectn-inner"><div class="split">
+  <div>
+    <h2>[SECTION_1_TITLE]</h2>
+    <p>[SECTION_1_LEAD]</p>
+    <ul><li>[BENEFIT_1A]</li><li>[BENEFIT_1B]</li><li>[BENEFIT_1C]</li></ul>
+  </div>
+  <div class="split-img"><img src="[SECTION_1_IMG]" alt="[SECTION_1_ALT]" loading="lazy"></div>
+</div></div></section>
+
+<section class="sectn" style="background:#f8fafc;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb">
+  <div class="sectn-inner"><div class="split reverse">
+    <div>
+      <h2>[SECTION_2_TITLE]</h2>
+      <p>[SECTION_2_LEAD]</p>
+      <ul><li>[BENEFIT_2A]</li><li>[BENEFIT_2B]</li></ul>
+    </div>
+    <div class="split-img"><img src="[SECTION_2_IMG]" alt="[SECTION_2_ALT]" loading="lazy"></div>
+  </div></div>
+</section>
+
+<section class="sectn"><div class="sectn-inner"><div class="split">
+  <div>
+    <h2>[SECTION_3_TITLE]</h2>
+    <p>[SECTION_3_LEAD]</p>
+    <ul><li>[BENEFIT_3A]</li><li>[BENEFIT_3B]</li><li>[BENEFIT_3C]</li></ul>
+  </div>
+  <div class="split-img"><img src="[SECTION_3_IMG]" alt="[SECTION_3_ALT]" loading="lazy"></div>
+</div></div></section>
+
+<section class="specs" id="setup" aria-label="Setup details">
+  <div class="specs-grid">
+    <h2 class="sectn-title" style="margin-bottom:8px">[SPECS_TITLE]</h2>
+    <p class="sectn-lead">[SPECS_LEAD]</p>
+    <div class="specs-table"><dl>
+      <div class="specs-row"><dt>[ROW_1_LABEL]</dt><dd>[ROW_1_VALUE]</dd></div>
+      <div class="specs-row"><dt>[ROW_2_LABEL]</dt><dd>[ROW_2_VALUE]</dd></div>
+      <div class="specs-row"><dt>[ROW_3_LABEL]</dt><dd>[ROW_3_VALUE]</dd></div>
+      <div class="specs-row"><dt>[ROW_4_LABEL]</dt><dd>[ROW_4_VALUE]</dd></div>
+    </dl></div>
+  </div>
+</section>
+
+<section class="faq" aria-label="FAQ">
+  <div class="faq-inner">
+    <h2 class="sectn-title">Frequently asked questions.</h2>
+    <details><summary>[Q1]</summary><p>[A1]</p></details>
+    <details><summary>[Q2]</summary><p>[A2]</p></details>
+    <details><summary>[Q3]</summary><p>[A3]</p></details>
+    <details><summary>[Q4]</summary><p>[A4]</p></details>
+  </div>
+</section>
+
+<section class="final-cta" id="contact" aria-label="Get started">
+  <div class="final-inner">
+    <h2>Get started today.</h2>
+    <p class="sub">Pick the path that suits you. [PATH_DESCRIPTION].</p>
+    <div class="cta-cards">
+      <article class="cta-card">
+        <h3>[CTA_LEFT_TITLE]</h3>
+        <p>[CTA_LEFT_DESC]</p>
+        <a class="btnx btnx-pri" href="[CONFIGURATOR_URL]" target="_blank" rel="noopener">[CTA_LEFT_BUTTON] &rarr;</a>
+      </article>
+      <article class="cta-card">
+        <h3>[CTA_RIGHT_TITLE]</h3>
+        <p>[CTA_RIGHT_DESC]</p>
+        <a class="btnx btnx-pri" href="[CONTACT_URL]" target="_blank" rel="noopener">[CTA_RIGHT_BUTTON] &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>

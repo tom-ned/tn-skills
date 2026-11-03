@@ -1,0 +1,7 @@
+{
+  "name": "tn-skills",
+  "owner": { "name": "Thomas Nedjar" },
+  "plugins": [
+    { "name": "tn-seo", "source": "./tn-seo", "description": "Skills Suisseo" }
+  ]
+}

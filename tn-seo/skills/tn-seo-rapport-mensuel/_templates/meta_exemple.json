@@ -1,0 +1,130 @@
+{
+ "client": "[Nom du client]",
+ "domain": "[domaine.ch]",
+ "objectif": "[Objectif decide avec le client : recruter, credibilite, vendre, sensibiliser]",
+ "market": "[Suisse (Google Switzerland)]",
+ "countries_focus": [
+  "che"
+ ],
+ "brand_terms": [
+  "[marque]",
+  "[variante de marque]"
+ ],
+ "competitors": [],
+ "month": "[AAAA-MM]",
+ "month_name": "[Juillet 2026]",
+ "month_m1": "[Juin 2026]",
+ "month_m2": "[Mai 2026]",
+ "month_year_ago": "[juillet 2025]",
+ "consultant": "Thomas Nedjar",
+ "footer": "Suisseo - Thomas Nedjar - thomas.nedjar@suisseo.ch",
+ "perimeter_prefix": "[/fr/ dans le meta d'une langue, vide dans le rapport global]",
+ "historique_debut": "[mai 2026]",
+ "lang_kpi": {
+  "M": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0,
+   "pages": 0,
+   "share": 0
+  },
+  "M1": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0,
+   "pages": 0,
+   "share": 0
+  },
+  "M2": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0,
+   "pages": 0,
+   "share": 0
+  }
+ },
+ "ch_kpi": {
+  "M": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0,
+   "share": 0,
+   "site_clicks": 0
+  },
+  "M1": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0,
+   "share": 0,
+   "site_clicks": 0
+  },
+  "M2": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0,
+   "share": 0,
+   "site_clicks": 0
+  }
+ },
+ "site_kpi": {
+  "M": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0
+  },
+  "M1": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0
+  },
+  "M2": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0
+  },
+  "Y": {
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0
+  }
+ },
+ "lecture": [
+  "[Paragraphe 1 : le mouvement du mois, chiffre, et ce qui le cause]",
+  "[Paragraphe 2 : saison contre tendance, comparaison N-1, ce qui se degrade vraiment]"
+ ],
+ "potentiel_langues": "[sortie de analyse_potentiel.py --out-potentiel]",
+ "sujets": [
+  {
+   "langue": "fr",
+   "titre": "[Titre editorial, a rediger a la main]",
+   "impressions": 0,
+   "clics": 0,
+   "position": 0,
+   "n_requetes": 0,
+   "requetes": [
+    "[requetes couvertes, sortie de analyse_potentiel.py]"
+   ]
+  }
+ ],
+ "actions": [
+  {
+   "titre": "[Sujet a lancer en premier]",
+   "pourquoi": "[Les chiffres qui le justifient]"
+  }
+ ],
+ "crawl_constat": "[Ce que la verification page par page montre, notamment les fausses alertes]",
+ "crawl_prios": [
+  {
+   "titre": "[Correction formulee en termes de contenu]",
+   "detail": "[Chiffres et action]"
+  }
+ ],
+ "crawl_date": "[20 aout 2026]",
+ "a_instruire": "[Question ouverte assumee plutot qu'une recommandation non verifiee. Optionnel]"
+}
