@@ -61,8 +61,8 @@ index_google, domain_trust}`. Utile pour un chiffre de contexte (autorite, pages
 {
   "client": "Client X",
   "domain": "www.exemple.ch",
-  "project_id": 9354257,
-  "engine_id": 2788619,
+  "project_id": 123456,
+  "engine_id": 654321,
   "engine_label": "Google Switzerland",
   "period_current": "2026-06",
   "period_prev": "2026-05",

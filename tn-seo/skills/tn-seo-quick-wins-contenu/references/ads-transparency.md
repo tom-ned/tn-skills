@@ -97,7 +97,7 @@ le filtre de l'outil.
 
 ## Lecture des résultats
 
-- `{KeyWord:Formation AutoCAD 2D & 3D}` : insertion dynamique de mot-clé. Le texte entre
+- `{KeyWord:Formation en ligne}` : insertion dynamique de mot-clé. Le texte entre
   accolades est le libellé par défaut, donc une requête que l'annonceur cible
   explicitement. C'est le signal le plus fiable de mot-clé acheté.
 - Chemin d'affichage (`www.domaine.ch/formations/autodesk`) : indication de la page de

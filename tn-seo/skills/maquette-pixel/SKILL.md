@@ -115,7 +115,7 @@ Voir `templates/body_template.html` pour la structure complete. Composants types
 2. **Hero** : eyebrow + H1 (avec `<em>` pour accent couleur primary) + lead + 2 CTA (primary jaune yellow + outline)
 3. **Trust strip** : 4 marqueurs sobres separes par des dots
 4. **3 sections split** image/texte alternees avec liste a check
-5. **Specs** sobre en `<dl>` (4 lignes : configurations, wind speed, optional features, where to test)
+5. **Specs** sobre en `<dl>` (4 lignes : configurations, performances, options, disponibilité)
 6. **FAQ** en `<details><summary>` (rendu natif deroulant)
 7. **Final CTA double** : Configurator + Talk to expert (gradient bleu fonce du client)
 
